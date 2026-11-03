@@ -5,7 +5,7 @@
       $slidev.nav.currentPage !== 1 &&
       $slidev.nav.currentPage !== $slidev.nav.total + 1
     "
-    class="absolute bottom-0 left-2 p-0 text-xs text-gray-400 w-full"
+    class="absolute bottom-0 left-2 p-0 text-xs text-gray-500 w-full"
   >
     <div class="flex">
       <div>

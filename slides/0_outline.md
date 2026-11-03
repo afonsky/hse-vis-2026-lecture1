@@ -47,7 +47,7 @@ img.no-border-radius {
 * Лектор и автор курсов в Вышке:
   * Машинное обучение
   * Глубинное обучение
-  * Визуализация данных
+  * Научная визуализация данных
 </div>
 
 <div>
@@ -63,7 +63,16 @@ img.no-border-radius {
 </div>
 
 ---
-zoom: 0.99
+
+# Чему мы научимся сегодня?
+
+- Объяснять, как визуализация дополняет анализ данных
+- Различать типы наборов данных и атрибутов
+- Формулировать задачу визуализации при помощи схемы **What–Why–How**
+- Оценивать визуализацию
+
+---
+zoom: 0.9
 ---
 
 # Расписание курса (возможны изменения)
@@ -84,7 +93,7 @@ zoom: 0.99
 .tg .tg-e4vo{background-color:#ffe6c9;border-color:#000000;font-size:small;text-align:left;vertical-align:top}
 .tg .tg-1p0a{border-color:#000000;font-size:small;text-align:left;vertical-align:middle}
 </style>
-<table class="tg" style="undefined;table-layout: fixed; width: 615px"><colgroup>
+<table class="tg" style="table-layout: fixed; width: 615px"><colgroup>
 <col style="width: 150.0px">
 <col style="width: 50.0px">
 <col style="width: 415.0px">
@@ -132,7 +141,7 @@ zoom: 0.99
     <tr>
     <td class="tg-1p0a">8 декабря</td>
     <td class="tg-jdzo">19:40</td>
-    <td class="tg-o7ju">💻Семинар 3: Практика создания визуализаций при помощии ИИ</td>
+    <td class="tg-o7ju">💻Семинар 3: Практика создания визуализаций при помощи ИИ</td>
   </tr>
   <tr>
     <td class="tg-1p0a">Следите за анонсом</td>

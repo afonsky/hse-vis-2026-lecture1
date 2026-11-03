@@ -15,7 +15,7 @@ zoom: 0.9
   * Примеры: рост, цвет глаз человека, температура и т.д.
   * Признак также известен как атрибут, переменная, поле, характеристика или свойство
 * Набор признаков описывает наблюдение
-  * Наблюдение также известено как объект, запись, точка, случай, образец, сущность
+  * Наблюдение также известно как объект, запись, точка, случай, образец, сущность
 </v-clicks>
 </div>
 
@@ -24,7 +24,7 @@ zoom: 0.9
 <br>
 <v-click at="2">
 <figure>
-  <img src="/data_matrix.png" style="width: 600px !important;">
+  <img src="/data_matrix.png" alt="Матрица наблюдений и признаков" style="width: 600px !important;">
 </figure>
 </v-click>
 </div>
@@ -37,18 +37,67 @@ zoom: 0.9
 <div class="grid grid-cols-[5fr_2fr] gap-15">
 <div>
 <figure>
-  <img src="/textbook/fig_2.1_1.svg" style="width: 650px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: -60px; left: 620px;">Источник:<br> <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Рис. 2.1. T. Munzner. Visualization Analysis and Design.<br> A K Peters Visualization Series, CRC Press, 2014</a>
+  <img src="/textbook/fig_2.1_1.svg" alt="Основные типы наборов данных: таблицы, сети, поля и геометрия" style="width: 650px !important;">
+  <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: -60px; left: 620px;">Источник:<br> <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Рис. 2.1. T. Munzner. Visualization Analysis and Design.<br> A K Peters Visualization Series, CRC Press, 2014</a>
   </figcaption>
 </figure>
 </div>
 <div>
 <figure>
 <br>
-<img src="/textbook/fig_2.1_2.svg" style="width: 150px !important;">
+<img src="/textbook/fig_2.1_2.svg" alt="Схема типов данных по Манзнер" style="width: 150px !important;">
 </figure>
 </div>
 </div>
+
+---
+
+# Типы атрибутов
+
+<div class="grid grid-cols-3 gap-6 mt-6">
+<div>
+
+### Категориальные
+Значения различаются по имени, но не имеют порядка
+
+**Примеры:** город, вид растения, экспериментальная группа
+
+</div>
+<div>
+
+### Порядковые
+Есть порядок, но расстояния между уровнями не обязательно равны
+
+**Примеры:** оценка сложности, класс качества
+
+</div>
+<div>
+
+### Количественные
+Можно сравнивать численные значения и выполнять арифметические операции
+
+**Примеры:** рост, температура, время
+
+</div>
+</div>
+
+<div class="mt-6 text-center text-xl">
+
+**Тип атрибута ограничивает подходящие визуальные каналы и операции**
+</div>
+
+---
+
+# Семантика атрибутов
+
+- **Последовательный:** значения меняются от минимального к максимальному
+  - Например, число наблюдений
+- **Расходящийся:** есть содержательная средняя точка
+  - Например, отклонение температуры от нормы
+- **Циклический:** после максимума следует начало нового цикла
+  - Например, час суток или день года
+- **Ключ** определяет объект или его положение, **значение** описывает измеренное свойство
+- **Производные данные** получают из исходных ради задачи: отношение, отклонение, агрегат
 
 ---
 zoom: 0.94
@@ -87,14 +136,12 @@ zoom: 0.94
 
 # Матрица данных
 
-* Если объекты данных имеют одинаковый фиксированный набор числовых атрибутов и каждое измерение представляет отдельный признак 
-
+* Если объекты данных имеют одинаковый фиксированный набор числовых атрибутов и каждое измерение представляет отдельный признак
 * Такой набор данных можно представить в виде матрицы $n \times p$, в которой есть $n$ строк, по одной для каждого объекта, и $p$ столбцов, по одному для каждого признака
-
 
 <center>
 <figure>
-  <img src="/data_matrix_1.png" style="width: 600px !important;">
+  <img src="/data_matrix_1.png" alt="Матрица данных с наблюдениями в строках и признаками в столбцах" style="width: 600px !important;">
 </figure>
 </center>
 
@@ -102,18 +149,16 @@ zoom: 0.94
 
 # Текстовые данные
 
-### (Один из способов представления)
-<br>
+### Один из способов представления — мешок слов
 
-* Каждый текст становится вектором уникальных "слов"
+* Каждый текст становится вектором уникальных слов
   * Каждое слово является компонентом (признаком) вектора
-  * Значение каждого компонента - сколько раз соответствующее слово<br> встречается в тексте
-<br>
-<br>
+  * Значение компонента показывает, сколько раз слово встречается в тексте
+  * Порядок слов в таком представлении теряется
 
 <center>
 <figure>
-  <img src="/document_data.png" style="width: 700px !important;">
+  <img src="/document_data.png" alt="Представление документов векторами частот слов" style="width: 700px !important;">
 </figure>
 </center>
 
@@ -121,16 +166,11 @@ zoom: 0.94
 
 # Данные транзакций
 
-### Особый тип наборов записей, в котором каждая запись (транзакция) включает в себя набор элементов
-
-<br>
-<br>
-<br>
-<br>
+### Особый тип наборов записей, в котором каждая запись (транзакция) включает набор элементов
 
 <center>
 <figure>
-  <img src="/transaction_data.png" style="width: 400px !important;">
+  <img src="/transaction_data.png" alt="Таблица транзакций и соответствующих им элементов" style="width: 400px !important;">
 </figure>
 </center>
 
@@ -140,76 +180,60 @@ zoom: 0.94
 
 ### Примеры: простой граф и граф ранжирования сайтов в поисковой выдаче Google Search
 
-<br>
-
-<div class="grid grid-cols-[3fr_5fr] gap-50">
+<div class="grid grid-cols-[3fr_5fr] gap-50 mt-8">
 <div>
-  <br>
-  <br>
 <figure>
-  <img src="/graph_1.png" style="width: 200px !important;">
+  <img src="/graph_1.png" alt="Простой граф из вершин и рёбер" style="width: 200px !important;">
 </figure>
 </div>
 
 <div>
 <figure>
-  <img src="/PageRanks-Example.png" style="width: 300px !important;">
+  <img src="/PageRanks-Example.png" alt="Пример графа страниц со значениями PageRank" style="width: 300px !important;">
 </figure>
 </div>
 </div>
-<br>
 
-#### Графы используются для представления географических, социальных, данных, торговых и прочих данных
+#### Графы представляют социальные, географические, торговые и другие связанные данные
 
 ---
 
 # Молекулярные структуры
 
-#### Пример: Молекулярная структура `{Nd[(2,6-Me2C6H3-O)2PO2]3[(2,6-Me2C6H3-O)2PO2H]3}`
-<br>
+#### Пример: `{Nd[(2,6-Me2C6H3-O)2PO2]3[(2,6-Me2C6H3-O)2PO2H]3}`
+
 <figure>
-  <img src="/Molecular-structure.png" style="width: 350px !important;">
-    <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 10px; left: 400px;">Источник изображения: DOI:
-    <a href="https://link.springer.com/article/10.1007/s11224-018-1132-2">10.1007/s11224-018-1132-2</a>
-  </figcaption>
+  <img src="/Molecular-structure.png" alt="Молекулярная структура в виде связанных атомов" style="width: 350px !important;">
+  <figcaption class="text-xs text-gray-500 mt-3">Источник: <a href="https://link.springer.com/article/10.1007/s11224-018-1132-2">DOI 10.1007/s11224-018-1132-2</a></figcaption>
 </figure>
 
 ---
 
 # Упорядоченные данные
 
-### Пример: последовательность аминокислот в ДНК
-<br>
-<br>
+### Пример: последовательность нуклеотидов в ДНК
+
 <figure>
-  <img src="/AMY1gene.png" style="width: 600px !important;">
-      <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 60px; left: 500px;">Источник изображения:<br>
-    <a href="https://en.wikipedia.org/wiki/Nucleic_acid_sequence">https://en.wikipedia.org/wiki/Nucleic_acid_sequence</a>
-  </figcaption>
+  <img src="/AMY1gene.png" alt="Фрагмент последовательности нуклеотидов гена AMY1" style="width: 600px !important;">
+  <figcaption class="text-xs text-gray-500 mt-3">Источник: <a href="https://en.wikipedia.org/wiki/Nucleic_acid_sequence">Nucleic acid sequence</a></figcaption>
 </figure>
 
 ---
 
 # Упорядоченные данные
 
-### Пример: Пространственно-временные данные
-<br>
-<br>
+### Пример: пространственно-временные данные
 
-<div class="grid grid-cols-[3fr_6fr] gap-50">
+<div class="grid grid-cols-[3fr_6fr] gap-50 mt-8">
 <div>
-<br>
-<br>
-<br>
 
 #### Среднемесячная температура на Земле
 </div>
 
 <div>
 <figure>
-  <img src="/World_ERAI_T2_scycle.gif" style="width: 600px !important;">
-      <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 20px; left: 100px;">Источник изображения: <a href="https://climatereanalyzer.org/clim/animations/">https://climatereanalyzer.org/clim/animations/</a>
-  </figcaption>
+  <img src="/World_ERAI_T2_scycle.gif" alt="Анимация сезонного изменения среднемесячной температуры на карте Земли" style="width: 600px !important;">
+  <figcaption class="text-xs text-gray-500 mt-3">Источник: <a href="https://climatereanalyzer.org/clim/animations/">Climate Reanalyzer</a></figcaption>
 </figure>
 </div>
 </div>

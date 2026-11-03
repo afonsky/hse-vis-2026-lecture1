@@ -35,7 +35,7 @@ author: Алексей Болдырев
 <div>
 <br>
 <br>
-<span style="color:#b3b3b3ff; font-size: 11px; float: right;">Изображение: Midjourney 6.0. Запрос "Data visualization"
+<span style="color:#b3b3b3ff; font-size: 12px; float: right;">Изображение: Midjourney 6.0. Запрос "Data visualization"
 </span>
 </div>
 
@@ -57,6 +57,10 @@ src: ./slides/4_data.md
 
 ---
 src: ./slides/5_vis_and_ai.md
+---
+
+---
+src: ./slides/6_summary.md
 ---
 
 ---

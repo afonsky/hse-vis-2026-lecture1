@@ -48,6 +48,7 @@ B -->|Воспроизводимость| E(''Научная'' визуализ�
 ---
 
 # Почему я интересуюсь визуализацией данных?
+
 <div class="grid grid-cols-[5fr_8fr] gap-6">
 <div v-click>
 
@@ -95,10 +96,8 @@ B -->|Воспроизводимость| E(''Научная'' визуализ�
 
 <br>
 <figure>
-  <img src="/80_types_of_charts_and_graphs.png" style="width: 2500px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 80px; left: 400px;">Источник изображений:<br>
-    <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization</a>
-  </figcaption>
+  <img src="/80_types_of_charts_and_graphs.png" alt="Каталог из 80 типов диаграмм" style="width: 2500px !important;">
+  <figcaption class="text-xs text-gray-500 mt-2">Источник: <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">Datylon, каталог диаграмм</a></figcaption>
 </figure>
 <br>
 
@@ -108,10 +107,8 @@ B -->|Воспроизводимость| E(''Научная'' визуализ�
 
 <br>
 <figure>
-  <img src="/80_types_of_charts_and_graphs_school.png" style="width: 2500px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 80px; left: 400px;">Источник изображений:<br>
-    <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization</a>
-  </figcaption>
+  <img src="/80_types_of_charts_and_graphs_school.png" alt="Каталог диаграмм с выделенными типами, знакомыми со школы" style="width: 2500px !important;">
+  <figcaption class="text-xs text-gray-500 mt-2">Источник: <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">Datylon, каталог диаграмм</a></figcaption>
 </figure>
 <br>
 
@@ -121,10 +118,8 @@ B -->|Воспроизводимость| E(''Научная'' визуализ�
 
 <br>
 <figure>
-  <img src="/80_types_of_charts_and_graphs_university.png" style="width: 2500px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 80px; left: 400px;">Источник изображений:<br>
-    <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization</a>
-  </figcaption>
+  <img src="/80_types_of_charts_and_graphs_university.png" alt="Каталог диаграмм с выделенными типами, изученными в университете" style="width: 2500px !important;">
+  <figcaption class="text-xs text-gray-500 mt-2">Источник: <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">Datylon, каталог диаграмм</a></figcaption>
 </figure>
 <br>
 
@@ -134,13 +129,13 @@ B -->|Воспроизводимость| E(''Научная'' визуализ�
 
 <br>
 <figure>
-  <img src="/80_types_of_charts_and_graphs.png" style="width: 2500px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 80px; left: 400px;">Источник изображений:<br>
-    <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization</a>
-  </figcaption>
+  <img src="/80_types_of_charts_and_graphs.png" alt="Каталог из 80 типов диаграмм" style="width: 2500px !important;">
+  <figcaption class="text-xs text-gray-500 mt-2">Источник: <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">Datylon, каталог диаграмм</a></figcaption>
 </figure>
 
-#### Это только малая часть видов визуализаций в 2D!
+<br>
+
+> #### Это только малая часть видов визуализаций в 2D!
 
 ---
 zoom: 0.9
@@ -177,6 +172,73 @@ zoom: 0.9
 	* Носителя (экрана / бумаги)
 * Визуальные идиомы можно анализировать
 -->
+
+---
+
+# Как анализировать визуализацию: What–Why–How
+
+<div class="grid grid-cols-3 gap-6 mt-8">
+<div class="bg-blue-50 dark:bg-blue-900 rounded p-5">
+
+### What?
+**Какие данные?**
+
+Тип набора данных, атрибуты и их семантика
+
+</div>
+<div class="bg-green-50 dark:bg-green-900 rounded p-5">
+
+### Why?
+**Зачем пользователю визуализация?**
+
+Действие и цель: исследовать, найти, сравнить, обобщить
+
+</div>
+<div class="bg-orange-50 dark:bg-orange-900 rounded p-5">
+
+### How?
+**Как устроена идиома?**
+
+Метки, каналы, компоновка и взаимодействие
+
+</div>
+</div>
+
+<div class="bg-gray-50 mt-18 text-center text-xl">
+
+**Сначала задача и данные — затем выбор конкретного графика**
+</div>
+
+<figcaption class="text-sm text-gray-500 mt-4">См. T. Munzner, Visualization Analysis and Design, главы 2–4</figcaption>
+
+---
+
+# Why: как описать задачу пользователя?
+
+<div class="grid grid-cols-[2fr_3fr] gap-10 mt-4">
+<div>
+
+- **Цель:** обнаружить новое или представить известное
+- **Поиск:** объект и его положение могут быть известны или нет
+- **Запрос:** идентифицировать, сравнить или обобщить
+
+</div>
+<div>
+
+**Типичные цели анализа**
+
+- Тренды, выбросы и особенности
+- Распределение одного атрибута
+- Зависимости и корреляции между атрибутами
+- Топология сети или форма пространственных данных
+
+</div>
+</div>
+
+<div class="mt-6 bg-blue-50 dark:bg-blue-900 rounded p-4">
+
+**Пример:** "Сравните распределения температуры по месяцам" — это задача **сравнения**, цель которой — анализ (сопоставление) **распределений** признака
+</div>
 
 ---
 zoom: 0.9
@@ -227,7 +289,7 @@ zoom: 0.9
 <v-click>
 <br>
 <figure>
-  <img src="/график_температуры_20241103_170125.jpg" style="width: 310px !important;">
+  <img src="/график_температуры_20241103_170125.jpg" alt="Школьный график изменения температуры" style="width: 310px !important;">
 </figure>
 </v-click>
 </div>
@@ -240,7 +302,7 @@ zoom: 0.9
 <br>
 <figure>
   <img src="/human_in_the_loop.drawio.png" style="width: 850px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 40px; left: 10px;">На основе Рис. 1 из <a href="https://link.springer.com/chapter/10.1007/978-3-540-70956-5_7">D. Keim et al, Visual Analytics: Definition, Process, and Challenges (2008)</a>
+  <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 40px; left: 10px;">На основе Рис. 1 из <a href="https://link.springer.com/chapter/10.1007/978-3-540-70956-5_7">D. Keim et al, Visual Analytics: Definition, Process, and Challenges (2008)</a>
   </figcaption>
 </figure>
 
@@ -275,7 +337,7 @@ zoom: 0.9
 		* Некоторые наборы данных изменяются во времени
 	* Часто требуется **переиспользовать** созданную визуализацию для других данных
 
-* Данные уже в памяти комьютера
+* Данные уже находятся в памяти компьютера
 
 * Иногда компьютерная визуализация использует некоторые аспекты нарисованной от руки графики
 </v-clicks>
@@ -286,10 +348,12 @@ zoom: 0.9
 
 <figure>
   <img src="/textbook/visualization-analysis-and-design_fig_1.2.svg" style="width: 790px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 20px; left: 10px;">Источник: <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Рис. 1.2. T. Munzner. Visualization Analysis and Design. A K Peters Visualization Series, CRC Press, 2014</a>
+  <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 20px; left: 10px;">Источник: <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Рис. 1.2. T. Munzner. Visualization Analysis and Design. A K Peters Visualization Series, CRC Press, 2014</a>
   </figcaption>
 </figure>
 
+---
+zoom: 0.96
 ---
 
 # Зачем использовать внешнюю память?
@@ -307,7 +371,7 @@ zoom: 0.9
 <v-click>
 <figure>
   <img src="/midjourney_abacus.jpg" style="width: 200px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;">Midjourney 6, запрос "hands and abacus"
+  <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;">Midjourney 6, запрос "hands and abacus"
   </figcaption>
 </figure>
 </v-click>
@@ -316,7 +380,7 @@ zoom: 0.9
 <v-click>
 <figure>
   <img src="/Quipu_H5400-L292213865_original.jpg" style="width: 248px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BF%D1%83">Кипу</a>. <a href="https://www.invaluable.com/auction-lot/beautiful-large-quipu-552-c-d594d89973">Источник фото</a>. См. также <a href="https://courses.csail.mit.edu/iap/khipu/">курс лекций MIT</a>
+  <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BF%D1%83">Кипу</a>. <a href="https://www.invaluable.com/auction-lot/beautiful-large-quipu-552-c-d594d89973">Источник фото</a>. См. также <a href="https://courses.csail.mit.edu/iap/khipu/">курс лекций MIT</a>
   </figcaption>
 </figure>
 </v-click>
@@ -326,7 +390,7 @@ zoom: 0.9
 <figure>
   <img src="/_MG_5700.jpg" style="width: 450px !important;">
 </figure>
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;"><a href="https://www.ville-ge.ch/meg/sql/en/musinfo_public.php?id=053477">Навигационная карта с Маршалловых островов.</a> Фото автора
+  <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;"><a href="https://www.ville-ge.ch/meg/sql/en/musinfo_public.php?id=053477">Навигационная карта с Маршалловых островов.</a> Фото А.Б.
   </figcaption>
 </v-click>
 </div>
@@ -339,10 +403,12 @@ zoom: 0.9
 -->
 
 ---
+zoom: 0.96
+---
 
 # Зачем использовать внешнюю память?
 
-* Наша *рабочая память* зависит от задачи и окружающих условий, и **ограничена всего несколькими элементами** ([N. Cowan, 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2864034))
+* Наша **рабочая память** зависит от задачи и окружающих условий, и **ограничена всего несколькими элементами** ([N. Cowan, 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC2864034))
 
 * Вместо внутреннего познания и рабочей памяти мы можем использовать **внешнюю память** (**внешние представления**) перцептивной системы
 <v-clicks depth="3">
@@ -409,7 +475,7 @@ backgroundSize: 20em 100%
 ---
 
 <!--
-Возможности параллельного восприятия через зрительную систему иллюстрирует то, как дирижеры читают партитуру. Это страница из партитуры 2-й симфонической сюиты из балета "Дафнис и Хлоя" Мориса Равеля. Дирижеру нужно обрабатывать 40 линий одноверменно. Время звучания, закодированное на этой странице меньше 5 секунд.
+Возможности параллельного восприятия через зрительную систему иллюстрирует то, как дирижёры читают партитуру. Это страница из партитуры 2-й симфонической сюиты из балета «Дафнис и Хлоя» Мориса Равеля. Дирижёру нужно обрабатывать 40 линий одновременно. Время звучания, закодированное на этой странице, меньше 5 секунд.
 -->
 
 ---
@@ -429,7 +495,7 @@ backgroundSize: 20em 100%
 </SlidevVideo>
 
 <figure>
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 30px; left: 0px;">Морис Равель<br>
+  <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 30px; left: 0px;">Морис Равель<br>
   Cюита для оркестра №2 (1912)<br>
   из балета "Дафнис и Хлоя"<br>
   Королевский Филармонический Оркестр<br> дир. Жан-Клод Казадезюс
@@ -466,7 +532,7 @@ zoom: 0.95
 <br>
 <v-click>
 
-* NB: Если водитель после долгой дороги не устает, то такое вождение недостаточно безопасно*
+* NB: Если водитель после долгой дороги не устал, то водитель водит машину недостаточно безопасно*
 
 </v-click>
 </div>
@@ -477,10 +543,6 @@ zoom: 0.95
   </figcaption>
 </figure>
 </v-click>
-
-<!--
-* Говоря о "сканировании" дорожной обстановки, не могу не вспомнить эпизод обучения вождению в комедии "Беззаботная" ("Happy-Go-Lucky") Майка Ли с Салли Хокинс в главной роли.
--->
 
 ---
 
@@ -525,9 +587,8 @@ zoom: 0.75
 <div>
 <v-click>
 <figure>
-  <img src="/Anscombe.svg" style="width: 700px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top:40px; left: 60px;">Источник: <a href="/https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D1%80%D1%82%D0%B5%D1%82_%D0%AD%D0%BD%D1%81%D0%BA%D0%BE%D0%BC%D0%B1%D0%B0">https://ru.wikipedia.org/wiki/Квартет_Энскомба</a>
-  </figcaption>
+  <img src="/Anscombe.svg" alt="Четыре разных набора точек с одинаковыми статистическими характеристиками" style="width: 700px !important;">
+  <figcaption class="text-xs text-gray-500 mt-2">Источник: <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D1%80%D1%82%D0%B5%D1%82_%D0%AD%D0%BD%D1%81%D0%BA%D0%BE%D0%BC%D0%B1%D0%B0">Квартет Энскомба</a></figcaption>
 </figure>
 </v-click>
 </div>
@@ -545,7 +606,7 @@ zoom: 0.75
 <div>
 
 <figure>
-  <img src="/Anscombe_table.png" style="width: 330px !important;">
+  <img src="/Anscombe_table.png" alt="Исходные значения четырёх наборов данных квартета Энскомба" style="width: 330px !important;">
 </figure>
 <br>
 
@@ -555,9 +616,8 @@ $r = 0.816, ~~~~y = 3 + 0.5 x, ~~~~R_{\mathrm{reg}}^2 = 0.67$
 <div>
 
 <figure>
-  <img src="/Anscombe.svg" style="width: 700px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top:40px; left: 60px;">Источник: <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D1%80%D1%82%D0%B5%D1%82_%D0%AD%D0%BD%D1%81%D0%BA%D0%BE%D0%BC%D0%B1%D0%B0">https://ru.wikipedia.org/wiki/Квартет_Энскомба</a>
-  </figcaption>
+  <img src="/Anscombe.svg" alt="Четыре разных набора точек с одинаковыми статистическими характеристиками" style="width: 700px !important;">
+  <figcaption class="text-xs text-gray-500 mt-2">Источник: <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D1%80%D1%82%D0%B5%D1%82_%D0%AD%D0%BD%D1%81%D0%BA%D0%BE%D0%BC%D0%B1%D0%B0">Квартет Энскомба</a></figcaption>
 </figure>
 </div>
 </div>
@@ -593,7 +653,7 @@ $\footnotesize ~~~r = 0.32$
 <br>
 <figure>
   <img src="/dino_3.png" style="width: 850px !important;">
-    <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top:5px; left: 710px;">Источники: <a href="https://en.wikipedia.org/wiki/Datasaurus_dozen">[1]</a>, <a href="https://dl.acm.org/doi/10.1145/3025453.3025912">[2]</a>
+    <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top:5px; left: 710px;">Источники: <a href="https://en.wikipedia.org/wiki/Datasaurus_dozen">[1]</a>, <a href="https://dl.acm.org/doi/10.1145/3025453.3025912">[2]</a>
   </figcaption>
 </figure>
 
@@ -604,7 +664,7 @@ $\footnotesize ~~~r = 0.32$
 <br>
 <figure>
   <img src="/80_types_of_charts_and_graphs.png" style="width: 2500px !important;">
-  <figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 80px; left: 400px;">Источник изображений:<br>
+  <figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 80px; left: 400px;">Источник изображений:<br>
     <a href="https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization">https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization</a>
   </figcaption>
 </figure>
@@ -624,7 +684,7 @@ zoom: 0.92
 <div>
 <figure>
   <img src="/scatterplot_1.png" style="height: 250px !important;">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;"><a href = "https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#scatter-plot">Источник изображения</a>
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;"><a href = "https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#scatter-plot">Источник изображения</a>
 </figcaption>
 </figure>
 </div>
@@ -632,7 +692,7 @@ zoom: 0.92
 <div>
 <figure>
   <img src="/bar_chart_1.png" style="height: 250px !important;">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;"><a href = "https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#bar-graph">Источник изображения</a>
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;"><a href = "https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#bar-graph">Источник изображения</a>
 </figcaption>
 </figure>
 </div>
@@ -640,7 +700,7 @@ zoom: 0.92
 <div>
 <figure>
   <img src="/line_chart_1.png" style="height: 250px !important;">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;"><a href = "https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#line-chart">Источник изображения</a>
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;"><a href = "https://www.datylon.com/blog/types-of-charts-graphs-examples-data-visualization#line-chart">Источник изображения</a>
 </figcaption>
 </figure>
 </div>
@@ -679,6 +739,126 @@ zoom: 0.9
 
 ---
 
+# Интерактивные визуализации
+
+<div class="grid grid-cols-[2fr_3fr] gap-10">
+<div>
+<v-plotly style="width: 400px !important; height: 190px !important"
+:data="[{
+x: Array.from({length: 15}, () => Math.random()*4.5),
+y: Array.from({length: 15}, () => Math.random()*0),
+type: 'scatter',
+mode: 'markers',
+marker: {color: 'red', size: 10, opacity: 0.5},
+showlegend: false
+},
+{
+x: Array.from({length: 15}, () => Math.random()*4.5+5.5),
+y: Array.from({length: 15}, () => Math.random()*0),
+type: 'scatter',
+mode: 'markers',
+marker: {color: 'green', size: 10, opacity: 0.5},
+showlegend: false
+}]"
+:layout="{
+xaxis: {zeroline: false},
+yaxis: {showticklabels: false, showgrid: false},
+margin: {l: 10, r:50, pad: 1}
+}"
+:config="{displayModeBar: false}"
+:options="{}"/>
+
+<v-plotly style="height: 250px; position: relative"
+:data="[{
+x: Array.from({length: 25}, () => Math.random()*0.5),
+y: Array.from({length: 25}, () => Math.random()*0.5),
+z: Array.from({length: 25}, () => Math.random()*0.5),
+type: 'scatter3d',
+mode: 'markers',
+marker: {color: 'red', size: 4, opacity: 0.5},
+showlegend: false
+},
+{
+x: Array.from({length: 15}, () => Math.random()*0.6+0.5),
+y: Array.from({length: 15}, () => Math.random()*0.6+0.5),
+z: Array.from({length: 15}, () => Math.random()*0.6+0.5),
+type: 'scatter3d',
+mode: 'markers',
+marker: {color: 'green', size: 4, opacity: 0.5},
+showlegend: false
+}]"
+:layout="{
+   scene: {camera: {eye: {x: 1.75, y: -1.25, z:1.05}},
+            xaxis: {title: 'x<sub>1</sub>', range: [0.01,1]},
+            yaxis: {title: 'x<sub>2</sub>', range: [0.,1]},
+            zaxis: {title: 'x<sub>3</sub>', range: [0.,1]}},
+   margin: {l: 20, r:20, b:20, t:1, pad: 5},
+}"
+:config="{displayModeBar: false}"
+:options="{}"/>
+</div>
+<div>
+<v-plotly style="width: 400px !important; height: 400px !important"
+:data="[{
+x: Array.from({length: 25}, () => Math.random()*0.45),
+y: Array.from({length: 25}, () => Math.random()*0.45),
+type: 'scatter',
+mode: 'markers',
+marker: {color: 'red', size: 10, opacity: 0.5},
+showlegend: false
+},
+{
+x: Array.from({length: 15}, () => Math.random()*0.55+0.5),
+y: Array.from({length: 15}, () => Math.random()*0.55+0.5),
+type: 'scatter',
+mode: 'markers',
+marker: {color: 'green', size: 10, opacity: 0.5},
+showlegend: false
+}]"
+:layout="{
+xaxis: {title: 'x<sub>1</sub>'},
+yaxis: {title: 'x<sub>2</sub>'},
+margin: {l: 40, r:20, b:70, t:20, pad: 2}
+}"
+:config="{displayModeBar: false}"
+:options="{}"/>
+</div>
+</div>
+
+---
+
+# Зачем нужна интерактивность?
+
+<div class="grid grid-cols-2 gap-10 mt-6">
+<div>
+
+### Возможности
+
+- Показать сначала обзор, затем детали
+- Фильтровать данные и менять точку зрения
+- Связывать несколько представлений
+- Исследовать вопросы, которые заранее неизвестны
+
+</div>
+<div>
+
+### Издержки
+
+- Время на изучение интерфейса и действия пользователя
+- Необходимость быстрого отклика и понятной обратной связи
+- Риск скрыть важное начальное состояние
+- Более сложные воспроизведение и проверка результата
+
+</div>
+</div>
+
+<div class="mt-6 text-center text-xl">
+
+**Интерактивность оправдана задачей, а не сама по себе**
+</div>
+
+---
+
 # Почему так много видов визуализаций?
 
 <br>
@@ -687,7 +867,7 @@ zoom: 0.9
 <div>
 <figure>
   <img src="/textbook/Figure_8.3.png" style="height: 280px !important;">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 40px; left: 0px;">Источник:<br> <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Рис. 8.3 (b,c). T. Munzner. Visualization Analysis and Design. A K Peters Visualization Series, CRC Press, 2014</a>
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 40px; left: 0px;">Источник:<br> <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Рис. 8.3 (b,c). T. Munzner. Visualization Analysis and Design. A K Peters Visualization Series, CRC Press, 2014</a>
 </figcaption>
 </figure>
 </div>
@@ -695,7 +875,7 @@ zoom: 0.9
 <div>
 <figure>
   <img src="/Australian_Census_2011_demographic_map.png" style="height: 280px !important;">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 40px; left: 0px;">Источник:<br><a href = "https://en.wikipedia.org/wiki/Choropleth_map">https://en.wikipedia.org/wiki/Choropleth_map</a>
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 40px; left: 0px;">Источник:<br><a href = "https://en.wikipedia.org/wiki/Choropleth_map">https://en.wikipedia.org/wiki/Choropleth_map</a>
 </figcaption>
 </figure>
 </div>
@@ -737,7 +917,7 @@ zoom: 0.86
 <center>
 <figure>
   <img src="/Worlds_animate.gif" style="width: 480px !important;">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 20px; left: 0px;">Соотношения между площадью каждой страны в проекции Меркатора и истинной площадью. Источник:
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 20px; left: 0px;">Соотношения между площадью каждой страны в проекции Меркатора и истинной площадью. Источник:
 <a href = "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%86%D0%B8%D1%8F_%D0%9C%D0%B5%D1%80%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D0%B0">https://ru.wikipedia.org/wiki/Проекция_Меркатора</a>
 </figcaption>
 </figure>
@@ -752,7 +932,7 @@ zoom: 0.86
 <v-click>	
 <figure>
   <img src="/Portræt_af_den_venezianske_maler_Giovanni_Bellini.jpg" style="height: 350px">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;"><a href = "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BB%D0%B8%D0%BD%D0%B8,_%D0%94%D0%B6%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B8">Джованни Беллини. Автопортрет (1511-12)</a>
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;"><a href = "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BB%D0%B8%D0%BD%D0%B8,_%D0%94%D0%B6%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B8">Джованни Беллини. Автопортрет (1511-12)</a>
 </figcaption>
 </figure>
 </v-click>
@@ -762,7 +942,7 @@ zoom: 0.86
 <v-click>	
 <figure>
   <img src="/Pickpocket-Still-1-aspect-ratio-1000-1250-2.jpg" style="height: 350px">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;"><a href = "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BC%D0%B0%D0%BD%D0%BD%D0%B8%D0%BA_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)">Робер Брессон. "Карманник" (1959)</a>
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;"><a href = "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BC%D0%B0%D0%BD%D0%BD%D0%B8%D0%BA_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)">Робер Брессон. "Карманник" (1959)</a>
 </figcaption>
 </figure>
 </v-click>
@@ -772,7 +952,7 @@ zoom: 0.86
 <v-click>	
 <figure>
   <img src="/Heinz_ad.jpg" style="height: 350px">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 5px; left: 0px;">Реклама кетчупа. McCann Erickson (~2010)
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 5px; left: 0px;">Реклама кетчупа. McCann Erickson (~2010)
 </figcaption>
 </figure>
 </v-click>
@@ -852,19 +1032,66 @@ zoom: 0.9
 
 * Помогает структурировать большое пространство вариантов
 
-* Большинство визуализаций неэффективны для конкретной задачи/данных
+* Большинство визуализаций неэффективны для конкретного сочетания задачи и данных
 
 * Анализ существующих визуализаций является основой к разработке новых
 </div>
 <div>
 <figure>
   <img src="/textbook/Figure_3.8.png" style="width: 480px !important;">
-<figcaption style="color:#b3b3b3ff; font-size: 11px; position: relative; top: 40px; left: 90px;">Источник изображений:<br> <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Рис. 3.8 и 3.9. T. Munzner. Visualization Analysis and Design. 2014</a>
+<figcaption style="color:#b3b3b3ff; font-size: 12px; position: relative; top: 40px; left: 90px;">Источник изображений:<br> <a href="https://www.cs.ubc.ca/~tmm/vadbook/">Рис. 3.8 и 3.9. T. Munzner. Visualization Analysis and Design. 2014</a>
 </figcaption>
 </figure>
 </div>
 </div>
 <br>
 <figure>
-  <img src="/textbook/Figure_3.9.png" style="width: 560px !important;">
+  <img src="/textbook/Figure_3.9.png" alt="Сравнение альтернативных визуальных идиом" style="width: 560px !important;">
 </figure>
+
+---
+zoom: 0.85
+---
+
+# Как проверить, что визуализация подходит?
+
+#### Рассмотрим цепочку из 4 уровней:<br>
+<div class="grid grid-cols-2 gap-4 mt-4 text-base">
+<div class="bg-blue-50 dark:bg-blue-900 rounded p-4">
+
+### 1. Ситуация в предметной области
+Правильно ли поняты люди, их работа и вопросы?
+
+**Методы:** наблюдение, интервью
+</div>
+<div class="bg-green-50 dark:bg-green-900 rounded p-4">
+
+### 2. Абстракция задачи и данных
+Верны ли **What** и **Why**, нужны ли производные данные?
+
+**Методы:** обсуждение с пользователями, анализ задач
+</div>
+<div class="bg-orange-50 dark:bg-orange-900 rounded p-4">
+
+### 3. Визуальная идиома и взаимодействие
+Работает ли **How** лучше альтернатив?
+
+**Методы:** сравнение вариантов, эксперименты с пользователями
+</div>
+<div class="bg-purple-50 dark:bg-purple-900 rounded p-4">
+
+### 4. Алгоритмы
+Хватает ли скорости и памяти компьютера для отзывчивости?
+
+**Методы:** замеры ресурсов, анализ сложности
+</div>
+</div>
+
+<figcaption class="text-sm text-gray-500 mt-2">См. T. Munzner, Visualization Analysis and Design, глава 4</figcaption>
+<div class="mt-4 text-center text-lg">
+
+<br>
+
+> #### **Ошибку на верхнем уровне не исправить идеальной реализацией на нижнем**
+</div>
+

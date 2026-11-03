@@ -15,5 +15,5 @@ layout: full
 ---
 
 <figure>
-  <img src="/conferences_journals.jpg" style="width: 860px !important;">
+  <img src="/conferences_journals.jpg" alt="Основные конференции и журналы по визуализации данных" style="width: 860px !important;">
 </figure>
